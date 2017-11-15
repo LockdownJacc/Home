@@ -331,11 +331,11 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id_usuario`),
   KEY `FK_usuarios_tipo` (`id_tipo`),
   CONSTRAINT `FK_usuarios_tipo` FOREIGN KEY (`id_tipo`) REFERENCES `tipos_usu` (`id_tipo`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 /*Data for the table `usuarios` */
 
-insert  into `usuarios`(`id_usuario`,`nombre`,`ap_paterno`,`ap_materno`,`usuario`,`contrasena`,`crear`,`modificar`,`eliminar`,`ver`,`id_tipo`,`activo`,`Created_at`,`Updated_at`,`Deleted_at`) values (2,'Jose Alberto','Carmona','Colin','laidisman217','1234',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,'Luis','Gomez','Laravel','donjuan217','$2y$10$sGXsP7lf3rL3WdGqLId.W.wKQj1GUxF3mCl6Aj8Dn1icxkv4hXRVG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'Laravel','MVC','Jack','lolrr45','$2y$10$wiQkWHPPnKYfJ216ukKeTuqJ1RQVmcapLzgBQm38PBziI5izEtPzK',NULL,NULL,NULL,NULL,NULL,NULL,'2017-11-15 02:28:44','2017-11-15 02:28:44',NULL);
+insert  into `usuarios`(`id_usuario`,`nombre`,`ap_paterno`,`ap_materno`,`usuario`,`contrasena`,`crear`,`modificar`,`eliminar`,`ver`,`id_tipo`,`activo`,`Created_at`,`Updated_at`,`Deleted_at`) values (2,'Jose Alberto','Carmona','Colin','laidisman217','1234',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,'Luis','Gomez','Laravel','donjuan217','$2y$10$sGXsP7lf3rL3WdGqLId.W.wKQj1GUxF3mCl6Aj8Dn1icxkv4hXRVG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'Laravel','MVC','Jack','lolrr45','$2y$10$wiQkWHPPnKYfJ216ukKeTuqJ1RQVmcapLzgBQm38PBziI5izEtPzK',NULL,NULL,NULL,NULL,NULL,NULL,'2017-11-15 02:28:44','2017-11-15 02:28:44',NULL),(5,'Juan','Camanei','lol','gatitobellaca','$2y$10$jQ8ChtrgnGu.kg6th1/n0O9YudvWgVRYDFri9KN8x05jkoxmC9Ds6',NULL,NULL,NULL,NULL,NULL,NULL,'2017-11-15 19:35:56','2017-11-15 19:35:56',NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
